@@ -1,0 +1,15 @@
+C:\Users\Prana\Documents\Code Stuff\ACM Research S22 - CC\ACM-Research-Coding-Challenge-S22\MushroomTester\bin\Release\net6.0\MushroomTester.exe
+C:\Users\Prana\Documents\Code Stuff\ACM Research S22 - CC\ACM-Research-Coding-Challenge-S22\MushroomTester\bin\Release\net6.0\mushrooms.csv
+C:\Users\Prana\Documents\Code Stuff\ACM Research S22 - CC\ACM-Research-Coding-Challenge-S22\MushroomTester\bin\Release\net6.0\MushroomTester.deps.json
+C:\Users\Prana\Documents\Code Stuff\ACM Research S22 - CC\ACM-Research-Coding-Challenge-S22\MushroomTester\bin\Release\net6.0\MushroomTester.runtimeconfig.json
+C:\Users\Prana\Documents\Code Stuff\ACM Research S22 - CC\ACM-Research-Coding-Challenge-S22\MushroomTester\bin\Release\net6.0\MushroomTester.dll
+C:\Users\Prana\Documents\Code Stuff\ACM Research S22 - CC\ACM-Research-Coding-Challenge-S22\MushroomTester\bin\Release\net6.0\ref\MushroomTester.dll
+C:\Users\Prana\Documents\Code Stuff\ACM Research S22 - CC\ACM-Research-Coding-Challenge-S22\MushroomTester\bin\Release\net6.0\MushroomTester.pdb
+C:\Users\Prana\Documents\Code Stuff\ACM Research S22 - CC\ACM-Research-Coding-Challenge-S22\MushroomTester\obj\Release\net6.0\MushroomTester.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Prana\Documents\Code Stuff\ACM Research S22 - CC\ACM-Research-Coding-Challenge-S22\MushroomTester\obj\Release\net6.0\MushroomTester.AssemblyInfoInputs.cache
+C:\Users\Prana\Documents\Code Stuff\ACM Research S22 - CC\ACM-Research-Coding-Challenge-S22\MushroomTester\obj\Release\net6.0\MushroomTester.AssemblyInfo.cs
+C:\Users\Prana\Documents\Code Stuff\ACM Research S22 - CC\ACM-Research-Coding-Challenge-S22\MushroomTester\obj\Release\net6.0\MushroomTester.csproj.CoreCompileInputs.cache
+C:\Users\Prana\Documents\Code Stuff\ACM Research S22 - CC\ACM-Research-Coding-Challenge-S22\MushroomTester\obj\Release\net6.0\MushroomTester.dll
+C:\Users\Prana\Documents\Code Stuff\ACM Research S22 - CC\ACM-Research-Coding-Challenge-S22\MushroomTester\obj\Release\net6.0\ref\MushroomTester.dll
+C:\Users\Prana\Documents\Code Stuff\ACM Research S22 - CC\ACM-Research-Coding-Challenge-S22\MushroomTester\obj\Release\net6.0\MushroomTester.pdb
+C:\Users\Prana\Documents\Code Stuff\ACM Research S22 - CC\ACM-Research-Coding-Challenge-S22\MushroomTester\obj\Release\net6.0\MushroomTester.genruntimeconfig.cache
