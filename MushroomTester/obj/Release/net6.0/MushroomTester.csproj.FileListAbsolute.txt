@@ -13,3 +13,5 @@ C:\Users\Prana\Documents\Code Stuff\ACM Research S22 - CC\ACM-Research-Coding-Ch
 C:\Users\Prana\Documents\Code Stuff\ACM Research S22 - CC\ACM-Research-Coding-Challenge-S22\MushroomTester\obj\Release\net6.0\ref\MushroomTester.dll
 C:\Users\Prana\Documents\Code Stuff\ACM Research S22 - CC\ACM-Research-Coding-Challenge-S22\MushroomTester\obj\Release\net6.0\MushroomTester.pdb
 C:\Users\Prana\Documents\Code Stuff\ACM Research S22 - CC\ACM-Research-Coding-Challenge-S22\MushroomTester\obj\Release\net6.0\MushroomTester.genruntimeconfig.cache
+C:\Users\Prana\Documents\Code Stuff\ACM Research S22 - CC\ACM-Research-Coding-Challenge-S22\MushroomTester\obj\Release\net6.0\MushroomTester.csproj.AssemblyReference.cache
+C:\Users\Prana\Documents\Code Stuff\ACM Research S22 - CC\ACM-Research-Coding-Challenge-S22\MushroomTester\bin\Release\net6.0\mushroomsTestData.csv

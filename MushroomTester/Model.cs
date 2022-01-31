@@ -28,12 +28,12 @@ namespace MushroomTester
 
                 "This program generates models that try to determine mushroom edibility by starting with a random set of weights and \n" +
                 "uses the genetic algorithm to find a model that works on >99.5% of the training data.\n\n" +
-                "Please note that the program can take a while before it finds an optimal model (~5min). During this process the program will print when:\n" +
+                "Please note that the program can take a while before it finds an optimal model. During this process the program will print when:\n" +
                 "- a better model than the current is found \n" +
                 "- it has been too long since a better model has been found and the mutation (change) rate has been increased\n" +
                 "- the mutation rate has increased too much and is reset back to normal\n" +
-                "- benchmark statistics (current highest score)\n" +
-                "Note: Program automatically stops after 1500 iterations\n" +
+                "- benchmark statistics (current highest score)\n\n" +
+                "NOTE: Program automatically stops after 1500 iterations\n" +
                 "(press any key to begin)\n"
 
          );
@@ -41,14 +41,14 @@ namespace MushroomTester
             Console.ReadKey();
 
             int modelSize = 150;
-            int testDataSize = 3000;
+            int testDataSize = 3500;
 
             Model[] brain = new Model[modelSize];
             List<char[]> allMush = new List<char[]>(); //training set
 
             using (var reader = new StreamReader("mushrooms.csv"))
             {
-                for(int i =0; i < testDataSize; i++) // read 500 mushrooms for training data
+                for(int i =0; i < testDataSize; i++) // read n mushrooms for training data
                 {
                     var line = reader.ReadLine();
                     line = line.Replace(",", string.Empty);
@@ -71,7 +71,7 @@ namespace MushroomTester
 
             int safety = 0;
 
-            while(currentBestScore < testDataSize * 0.995)
+            while(currentBestScore < testDataSize - 10)
             {
                 brain = new Model[modelSize];
                 for (int i = 0; i < brain.Length; i++)
@@ -90,8 +90,7 @@ namespace MushroomTester
                 }
                 if(safety % 50 == 0 || safety <= 10)
                 {
-                    Console.WriteLine("Benkmark: iteration " + safety + ". Current Best Score = " + currentBestScore + " out of " + testDataSize + ".");
-                    Thread.Sleep(1000);
+                    Console.WriteLine("Benchmark: iteration " + safety + ". Current Best Score = " + currentBestScore + " out of " + testDataSize + ".");
                 }
 
 
@@ -122,9 +121,9 @@ namespace MushroomTester
 
             allMush.Clear();
 
-            using (var reader = new StreamReader("mushrooms.csv"))
+            using (var reader = new StreamReader("mushroomsTestData.csv"))
             {
-                for (int i = 0; i < 8000; i++) // read all mushrooms from test data
+                for (int i = 0; i < 5000; i++) // read all mushrooms from test data
                 {
                     var line = reader.ReadLine();
                     line = line.Replace(",", string.Empty);
@@ -133,11 +132,13 @@ namespace MushroomTester
 
                     allMush.Add(singleMush);
                 }
+                reader.Close();
             }
 
             currentBestModel.evaluateModel(allMush);
-            Console.WriteLine("Model gets a score of: " + currentBestModel.personalScore + " out of 8000 elements in the test data (" + (int) (currentBestModel.personalScore / 8000 *100) + "%).");
-
+            Console.WriteLine("Model gets a score of: " + currentBestModel.personalScore + " out of 5000 elements in the test data (" + (int) (currentBestModel.personalScore / 5000 *100) + "%).");
+            Console.WriteLine("Press any key to exit.");
+            Console.ReadKey();
         }
 
         Model() // generate random weights  
@@ -191,7 +192,7 @@ namespace MushroomTester
 
             }
 
-            if(currentBestScore < score)
+            if(currentBestScore < score && Math.Abs(weights[1]) < 3)
             {
                 Console.WriteLine("New Model found");
                 generationsSinceLastChange = 0;
